@@ -62,11 +62,8 @@ body {
 
 /* ========== Layout ========== */
 .app-shell {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;   /* IMPORTANT */
-  padding: 0;
+  min-height: 100svh;
+  width: 100%;
 }
 
 .brand {
@@ -186,6 +183,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-items:center;
   padding: 20px;
   gap: 12px;
 }
@@ -589,19 +587,18 @@ body {
 } */
 
 .laptop-frame {
-  width: 100vw;
-  min-height: 100vh;
-
-   border-radius: 12px;      
-  overflow: hidden;
-
+  width: 100%;
+  min-height: 100svh; /* better for mobile browsers */
+  border-radius: 0;   /* remove fake screen corners */
+  overflow-x: hidden;
   background: linear-gradient(180deg, var(--panel), var(--panel2));
-
-  box-shadow: var(--shadow);
+  box-shadow: none;   /* remove frame shadow */
 }
 
-/* Adjust hero layout for wider screens */
-.laptop-frame .hero__content {
+
+@media (min-width: 768px) {
+
+.hero__content {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -609,31 +606,31 @@ body {
   padding: 20px;
 }
 
-.laptop-frame .hero {
+.hero {
   padding-left: 0;
 }
 
-.laptop-frame .avatar {
+.avatar {
   width: 120px;
   height: 120px;
   margin-left:35%;
   margin-right:0;
 }
-.laptop-frame .avatar__inner {
+ .avatar__inner {
   width: 100px;
   height: 100px;
   font-size: 42px;
 }
 
-.laptop-frame .hero__title {
+ .hero__title {
   font-size: 36px;
 }
-.laptop-frame .hero__subtitle {
+ .hero__subtitle {
   font-size: 18px;
 }
 
-/* Make CTA grid more horizontal */
-.laptop-frame .grid {
+.grid {
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
+} 
 }
