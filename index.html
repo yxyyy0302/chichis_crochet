@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chichi's Crochet</title>
+    <meta name="description" content="Handmade crochet pieces made with love." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Cute + readable font pairing -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="app-shell">
+
+
+      <main class="laptop-frame" role="main">
+        <!-- HERO -->
+        <section class="hero">
+          <div class="awning-wrap">
+  <div class="hero__awning">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="hero_image">
+    <span> <img src="awning_lace.png" /></span> 
+  </div>
+ 
+</div>
+
+          <div class="hero__content">
+            <div class="avatar" aria-hidden="true">
+              <!-- Replace with your own image if you want -->
+              <div class="avatar__inner">
+               🍎
+              </div>
+            </div>
+
+           <div class="hero__text">
+  <h1 class="hero__title">Welcome to <br> Chichi's Crochet!</h1>
+  <p class="hero__subtitle">Handmade crochet • Made with love</p>
+</div>
+
+    
+
+        </section>
+
+        <!-- CTA CARD -->
+        <section class="cta-card" aria-label="Quick actions" >
+          <a class="cta cta--primary" href=" " style="text-align: center;">
+            <div class="cta__top" >
+              <span class="cta__label" >View Products</span>
+         
+            </div>
+            <div class="cta__sub">Cute bags • hair clips • plushies</div>
+          </a >
+
+         <div class="cta-with-grid">
+  <!-- Fake button top -->
+  <div class="cta__top" style="text-align: center;">
+    <span class="cta__label">Popular This Week</span>
+  </div>
+
+  <!-- Grid inside the same clickable area -->
+  <div class="grid" >
+    <article class="product">
+      <div class="product__img" aria-hidden="true">🐰</div>
+      <h3 class="product__name">Bunny Pouch</h3>
+    </article>
+
+    <article class="product">
+      <div class="product__img" aria-hidden="true">🐱</div>
+      <h3 class="product__name">Cat Clip</h3>
+    </article>
+
+    <article class="product">
+      <div class="product__img" aria-hidden="true">🌼</div>
+      <h3 class="product__name">Flower Coaster</h3>
+    </article>
+  </div>
+</div>
+
+          
+
+          <a class="cta" href="#learn" style="text-align: center;">
+            <div class="cta__top" >
+              <span class="cta__label" >Contact Us</span>
+            </div>
+            <div class="cta__sub">Buy a crochet item today!</div>
+          </a >
+        </section>
+
+          
+        
+        </button>
+
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+       
+         <div class="footer__tiny">
+  Made with 🧶 and a lot of patience. © 2026</span>
+</div>
+
+        </footer>
+      </main>
+    </div>
+
+    <!-- CONTACT MODAL -->
+    <dialog class="modal" id="contactModal" aria-label="Contact us">
+      <form method="dialog" class="modal__card">
+        <div class="modal__top">
+          <div class="modal__title">Contact Us</div>
+          <button class="modal__close" value="cancel" aria-label="Close">✕</button>
+        </div>
+
+        <div class="modal__body">
+          <p class="modal__hint">Leave a message and we’ll reply soon.</p >
+
+          <label class="field">
+            <span class="field__label">Your name</span>
+            <input class="field__input" name="name" placeholder="Cindy" autocomplete="name" />
+          </label>
+
+          <label class="field">
+            <span class="field__label">Email</span>
+            <input class="field__input" name="email" placeholder="you@example.com" autocomplete="email" />
+          </label>
+
+          <label class="field">
+            <span class="field__label">Message</span>
+            <textarea class="field__input field__textarea" name="message" rows="4"
+              placeholder="I want a custom cat clip in purple…"></textarea>
+          </label>
+
+          <div class="modal__actions">
+            <button class="btn" value="cancel" type="submit">Cancel</button>
+            <button class="btn btn--primary" id="fakeSend" type="button">Send</button>
+          </div>
+
+          <div class="modal__note" id="sendNote" hidden>
+            Sent! (Demo only — hook this to your backend later.)
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
