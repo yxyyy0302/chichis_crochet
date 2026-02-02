@@ -634,3 +634,9 @@ body {
   gap: 14px;
 } 
 }
+
+
+.hero--simple {
+  background-image: none !important;
+}
+
